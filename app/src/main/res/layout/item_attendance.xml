@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_back"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_item_attendance_dateLayout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_icon_attendance"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_attendance_date"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="29"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+
+            android:id="@+id/tv_item_attendance_month"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:text="March"
+            android:textColor="#fff"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_attendance_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/rl_attendance_percentage"
+        android:layout_toRightOf="@+id/ll_item_attendance_dateLayout"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_item_attendance_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="Monday"
+            android:textColor="#222222"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_item_attendance_attended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_attendance_day"
+            android:text="3 classes attended"
+            android:textColor="@color/primaryColor"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_item_attendance_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_attendance_attended"
+            android:text="4 classes total"
+            android:textColor="@color/primaryColor"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_attendance_percentage"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tv_item_attendance_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="100%"
+            android:textStyle="bold"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
